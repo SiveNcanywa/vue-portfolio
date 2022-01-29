@@ -1,12 +1,13 @@
 <template>
   <section id="testimonials">
+    <h2 class="testimonials-watermark color">Testimonials</h2>
     <div class="container">
       <div class="row">
         <!--  Single Starts  -->
         <div class="col-md-4 service-block">
           <div class="service-block-one">
            <div class="inner-box">
-              <img class="test" src="../assets/Breda_Y1.JPG" alt="person" />
+              <img class="test" src="../assets/images/me.jpg" alt="person" />
 
               <div class="testimonial-text">
                 <h3><a href="#">Test Service</a></h3>
@@ -23,7 +24,7 @@
         <div class="col-md-4 service-block">
           <div class="service-block-one">
             <div class="inner-box">
-              <img class="test" src="../assets/Craig2.JPG" alt="person" />
+              <img class="test" src="../assets/images/me.jpg" alt="person" />
 
               <div class="testimonial-text">
                 <h3><a href="#">Test Service</a></h3>
@@ -39,7 +40,7 @@
          <div class="col-md-4 service-block">
           <div class="service-block-one">
             <div class="inner-box">
-              <img class="test" src="../assets/Zharne1.JPG" alt="person" />
+              <img class="test" src="../assets/me.jpg" alt="person" />
 
               <div class="testimonial-text">
                 <h3><a href="#">Test Service</a></h3>
@@ -55,7 +56,7 @@
          <div class="col-md-4 service-block">
           <div class="service-block-one">
             <div class="inner-box">
-              <img class="test" src="../assets/Enosh3.JPG" alt="person" />
+              <img class="test" src="../assets/me.jpg" alt="person" />
 
               <div class="testimonial-text">
                 <h3><a href="#">Test Service</a></h3>
@@ -71,7 +72,7 @@
          <div class="col-md-4 service-block">
           <div class="service-block-one">
             <div class="inner-box">
-              <img class="test" src="../assets/Haniah1.JPG" alt="person" />
+              <img class="test" src="../assets/me.jpg" alt="person" />
 
               <div class="testimonial-text">
                 <h3><a href="#">Test Service</a></h3>
@@ -308,5 +309,29 @@ export default {};
 
 .inner-box:hover .testimonial-text {
   opacity: 1;
+}
+#about h2 {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 100px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.testimonials-watermark {
+  position: relative;
+}
+
+.testimonials-watermark::before {
+  position: absolute;
+  top: -29%;
+  left: 50%;
+  height: 100%;
+  /* width: 100%; */
+  color: lightgray;
+  opacity: 0.5;
+  content: "TESTIMONIALS";
+  z-index: -1;
+  transform: translate(-50%, 25%) scale(2);
 }
 </style>

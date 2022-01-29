@@ -1,10 +1,8 @@
 <template>
   <section id="contact" class="contact-page-section">
+     <h2 class="about-watermark color">Contact me</h2>
     <div class="container">
-      <div class="sec-title">
-        <div class="title">Contact Us</div>
-        <h2>Let's Get in Touch.</h2>
-      </div>
+     
       <div class="inner-container">
         <div class="row clearfix">
           <!--Form Column-->
@@ -110,40 +108,7 @@ ul {
   padding: 0;
   margin: 0;
 }
-.sec-title {
-  position: relative;
-  padding-bottom: 40px;
-}
-.sec-title .title {
-  position: relative;
-  color: #00b8ca;
-  font-size: 18px;
-  font-weight: 700;
-  padding-right: 50px;
-  margin-bottom: 15px;
-  display: inline-block;
-  text-transform: capitalize;
-}
-.sec-title .title:before {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 7px;
-  width: 40px;
-  height: 1px;
-  background-color: #bbb;
-}
-.sec-title h2 {
-  position: relative;
-  color: #193050;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.5em;
-  display: block;
-}
-.sec-title.light h2 {
-  color: #fff;
-}
+
 .contact-page-section {
   position: relative;
   padding-top: 110px;
@@ -296,5 +261,29 @@ ul {
 }
 .social-icon-four li a:hover {
   color: #222;
+}
+#about h2 {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 100px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.about-watermark {
+  position: relative;
+}
+
+.about-watermark::before {
+  position: absolute;
+  top: -29%;
+  left: 50%;
+  height: 100%;
+  /* width: 100%; */
+  color: lightgray;
+  opacity: 0.5;
+  content: "CONTACT ME";
+  z-index: -1;
+  transform: translate(-50%, 25%) scale(2);
 }
 </style>
