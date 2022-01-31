@@ -16,6 +16,7 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s.
                 </p>
+                <a href=""><i class="fas fa-eye"></i></a>
               </div>
             </div>
           </div>
@@ -33,6 +34,7 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s.
                 </p>
+                <a href=""><i class="fas fa-eye"></i></a>
               </div>
             </div>
           </div>
@@ -49,6 +51,7 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s.
                 </p>
+                <a href=""><i class="fas fa-eye"></i></a>
               </div>
             </div>
           </div>
@@ -65,6 +68,9 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s.
                 </p>
+                <a href=""><i class="fas fa-eye"></i></a>
+
+                
               </div>
             </div>
           </div>
@@ -81,6 +87,7 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s.
                 </p>
+                <a href=""><i class="fas fa-eye"></i></a>
               </div>
             </div>
           </div>
@@ -97,6 +104,7 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s.
                 </p>
+                <a href=""><i class="fas fa-eye"></i></a>
               </div>
             </div>
             </div>
@@ -111,7 +119,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 @keyframes slide {
   from {
     background-position: 0 0;

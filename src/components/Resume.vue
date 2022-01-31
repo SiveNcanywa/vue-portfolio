@@ -51,7 +51,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 .time {
   min-height: 100vh;
   width: 100%;

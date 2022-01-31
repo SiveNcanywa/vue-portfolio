@@ -1,20 +1,25 @@
 <template>
-  <section id="About">
-    <h2 class="aboutme-watermark color">About me</h2>
-    <div class="row justify-content-evenly">
-      <div class="col-4">
-        <div class="self">
-          <img src="../assets/images/selfieee.png" alt="" />
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="bio">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
-            libero rem mollitia ullam vero fugit quidem facere illo iusto
-            recusandae. Magni maiores et a iure reiciendis consequatur, vero
-            eaque accusamus?
-          </p>
+  <!-- about section start -->
+  <!-- about section start -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="max-width">
+        <h2 class="title">About me</h2>
+        <div class="about-content">
+          <div class="row">
+            <div class="column left">
+              <img src="../assets/images/selfieee.png" alt="" />
+            </div>
+            <div class="column right">
+            
+              <p>I am a hard-working and committed individual who is always keen to learn new things. I am energetic
+          and always try to do and give my best in everything I do. As a sociable individual, I love working with
+          people and my personality could be described as kind and loving. I have good communication skills. I believe that through communication and working together people can achieve a lot.  I have great leading skills and I can lead a team of people.I work well with others.  I love and enjoy solving problems and challenges. I always give my best in everything I do. </p>
+              <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=sive.ncanywa@gmail.com" target="_blank"
+                >Hire me</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -25,53 +30,47 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 
-.self,
-.self img {
-  width: 112%;
-  padding-top: 20px;
-  object-position: 0px -40px;
-  /* width: 30%;
-  height: 70%;
-  border-radius: 20%;
-  padding-left: 40px;
-  float: right; */
+.about .about-content .left {
+  width: 45%;
 }
-.bio {
-  width: 112%;
-  padding-top: 20px;
-  float: right;
+.about .about-content .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.about .about-content .right {
+  width: 55%;
+  padding-top: 210px;
+  
+}
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about .about-content .right .text span {
+  color: crimson;
+}
+.about .about-content .right p {
+  text-align: justify;
+}
+.about .about-content .right a {
+  display: inline-block;
+  background: #193050;
+  color: #fff;
   font-size: 20px;
-  /* display: flex; */
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #193050;
+  transition: all 0.3s ease;
 }
-#about h2 {
-  text-align: center;
-  font-size: 40px;
-  padding-top: 100px;
-  text-transform: uppercase;
-  z-index: 2;
-}
-
-.aboutme-watermark {
-  position: relative;
-}
-
-.aboutme-watermark::before {
-  position: absolute;
-  top: -29%;
-  left: 50%;
-  height: 100%;
-  /* width: 100%; */
-  color: lightgray;
-  opacity: 0.5;
-  content: "ABOUT ME";
-  z-index: -1;
-  transform: translate(-50%, 25%) scale(2);
-}
-
-#about {
-  padding-left: 20px;
-  padding-right: 20px;
+.about .about-content .right a:hover {
+  color: #193050;
+  background: none;
 }
 </style>
