@@ -1,5 +1,6 @@
 <template>
   <section id="Home">
+    <h1>Hello I am <span id="list"></span></h1>
     <div>
 
   <ul>
@@ -21,7 +22,8 @@
 </template>
 
 <script>
-export default {};
+export default {
+};
 </script>
 
 <style scoped>
@@ -41,7 +43,8 @@ body {
 
 div {
   font-family: "Merriweather", serif;
-  font-size: 2rem;
+  font-size: 27px;
+  color:white;
 }
 
 p,
@@ -60,7 +63,7 @@ ul {
   /* margin: 1rem; */
   list-style-type: none;
   font-size: 2rem;
-  padding: 26rem;
+  padding: 35rem;
 }
 
 ul li {

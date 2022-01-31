@@ -74,7 +74,7 @@ export default {};
 }
 .timeline ul li {
   padding: 20px;
-  background-color: #1e1f22;
+  background-color:#00b8ca;
   color: white;
   /* border-radius: 10px; */
   margin-bottom: 20px;

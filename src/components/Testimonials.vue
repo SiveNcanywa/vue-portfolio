@@ -16,7 +16,8 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s.
                 </p>
-                <a href=""><i class="fas fa-eye"></i></a>
+                <a href=""><i class="fas fa-eye"></i></a><br>
+                <a href=""><i class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -34,7 +35,8 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s.
                 </p>
-                <a href=""><i class="fas fa-eye"></i></a>
+                <a href=""><i class="fas fa-eye"></i></a><br>
+                <a href=""><i class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -51,7 +53,8 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s.
                 </p>
-                <a href=""><i class="fas fa-eye"></i></a>
+                <a href=""><i class="fas fa-eye"></i></a><br>
+                <a href=""><i class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -68,7 +71,8 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s.
                 </p>
-                <a href=""><i class="fas fa-eye"></i></a>
+                <a href=""><i class="fas fa-eye"></i></a><br>
+                <a href=""><i class="fab fa-github"></i></a>
 
                 
               </div>
@@ -87,7 +91,9 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s.
                 </p>
-                <a href=""><i class="fas fa-eye"></i></a>
+                <a href=""><i class="fas fa-eye"></i></a><br>
+                <a href=""><i class="fab fa-github"></i></a>
+
               </div>
             </div>
           </div>
@@ -104,7 +110,9 @@
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s.
                 </p>
-                <a href=""><i class="fas fa-eye"></i></a>
+                <a href=""><i class="fas fa-eye"></i></a><br>
+                <a href=""><i class="fab fa-github"></i></a>
+
               </div>
             </div>
             </div>
