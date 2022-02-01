@@ -39,7 +39,7 @@ export default {};
   height: 400px;
   width: 400px;
   object-fit: cover;
-  border-radius: 6px;
+  border: 10px #193050  ;
 }
 .about .about-content .right {
   width: 55%;

@@ -1,6 +1,6 @@
 <template>
   <section id="Resume">
-     <h2 class="resume-watermark color">resume</h2>
+    <h1 class="heading">Contact Me!</h1>
     <div class="time">
       <div class="timeline">
         <ul>
@@ -52,6 +52,7 @@ export default {};
 </script>
 
 <style scoped>
+
 .time {
   min-height: 100vh;
   width: 100%;

@@ -1,5 +1,5 @@
 <template>
-   <nav class="navbar">
+   <nav class="navbar navbar navbar-expand-lg">
         <div class="max-width">
             <div class="logo"><a href="#">Sive<span>CN.</span></a></div>
             <ul class="menu">

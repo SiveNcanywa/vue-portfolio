@@ -1,125 +1,64 @@
 <template>
   <section id="testimonials">
-    <h2 class="testimonials-watermark color">Testimonials</h2>
-    <div class="container">
-      <div class="row">
-        <!--  Single Starts  -->
-        <div class="col-md-4 service-block">
-          <div class="service-block-one">
-           <div class="inner-box">
-              <img class="test" src="../assets/images/me.jpg" alt="person" />
-
-              <div class="testimonial-text">
-                <h3><a href="#">Test Service</a></h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
-                </p>
-                <a href=""><i class="fas fa-eye"></i></a><br>
-                <a href=""><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--  Single Ends  -->
-        <div class="col-md-4 service-block">
-          <div class="service-block-one">
-            <div class="inner-box">
-              <img class="test" src="../assets/images/me.jpg" alt="person" />
-
-              <div class="testimonial-text">
-                <h3><a href="#">Test Service</a></h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
-                </p>
-                <a href=""><i class="fas fa-eye"></i></a><br>
-                <a href=""><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-4 service-block">
-          <div class="service-block-one">
-            <div class="inner-box">
-              <img class="test" src="../assets/me.jpg" alt="person" />
-
-              <div class="testimonial-text">
-                <h3><a href="#">Test Service</a></h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
-                </p>
-                <a href=""><i class="fas fa-eye"></i></a><br>
-                <a href=""><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-4 service-block">
-          <div class="service-block-one">
-            <div class="inner-box">
-              <img class="test" src="../assets/me.jpg" alt="person" />
-
-              <div class="testimonial-text">
-                <h3><a href="#">Test Service</a></h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
-                </p>
-                <a href=""><i class="fas fa-eye"></i></a><br>
-                <a href=""><i class="fab fa-github"></i></a>
-
-                
-              </div>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-4 service-block">
-          <div class="service-block-one">
-            <div class="inner-box">
-              <img class="test" src="../assets/me.jpg" alt="person" />
-
-              <div class="testimonial-text">
-                <h3><a href="#">Test Service</a></h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
-                </p>
-                <a href=""><i class="fas fa-eye"></i></a><br>
-                <a href=""><i class="fab fa-github"></i></a>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 service-block">
-          <div class="service-block-one">
-             <div class="inner-box">
-              <img class="test" src="../assets/me.jpg" alt="person" />
-
-              <div class="testimonial-text">
-                <h3><a href="#">Test Service</a></h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
-                </p>
-                <a href=""><i class="fas fa-eye"></i></a><br>
-                <a href=""><i class="fab fa-github"></i></a>
-
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
+    <div class="cards">
+  <figure class="snip1390">
+  <img src="https://i.postimg.cc/8PQT7WqX/Bongani3.jpg" alt="profile-sample3" class="profile" />
+  <figcaption>
+    <h2>Bongani Nomangola</h2>
+    <h4>Collegue</h4>
+    <blockquote>Sive is a dedicated and hard-working individual who always gives her best in everything she does.</blockquote>
+  </figcaption>
+</figure>
+<figure class="snip1390 hover"><img src="https://i.postimg.cc/j5k89HrH/Enosh.jpg" alt="profile-sample5" class="profile" />
+  <figcaption>
+    <h2>Enosh Elliot</h2>
+    <h4>Collegue</h4>
+    <blockquote> Sive is   loving and able to use a working evironment as a learning place where she develops her skills day by day.
+      
+    </blockquote>
+  </figcaption>
+</figure>
+<figure class="snip1390">
+  <img src="
+https://i.postimg.cc/CLFjpZmX/alex.jpg" alt="profile-sample6" class="profile" />
+  <figcaption>
+    <h2>Alex Sexwale</h2>
+    <h4>Public Relations</h4>
+    <blockquote>Sive is hard working and an inspiration to her colleagues.She is able work under under pressure and is able to cooperate well.</blockquote>
+  </figcaption>
+</figure>
+</div>
+ <div class="cards">
+  <figure class="snip1390">
+  <img src="https://i.postimg.cc/Tw6KjSsF/Craig.jpg" alt="profile-sample3" class="profile" />
+  <figcaption>
+    <h2>Craig Braff</h2>
+    <h4>Collegue</h4>
+    <blockquote>Sive is a very bright,funny and hardworking individual.
+        She also knows how to adapt
+        to different groups of people leaving smiles on their faces. </blockquote>
+  </figcaption>
+</figure>
+<figure class="snip1390 hover"><img src="
+https://i.postimg.cc/vBhZrmfx/Haniah.jpg" alt="profile-sample5" class="profile" />
+  <figcaption>
+    <h2>Haniah Jordan</h2>
+    <h4>Collegue</h4>
+    <blockquote>
+        Sive extremely dedicated to her work and always makes sure
+        to put best her work forward, especially with her determined
+        mindset.</blockquote>
+  </figcaption>
+</figure>
+<figure class="snip1390">
+  <img src="https://i.postimg.cc/4xpZvdT4/Zharne.jpg" alt="profile-sample6" class="profile" />
+  <figcaption>
+    <h2>Zharne Desember</h2>
+    <h4>Collegue</h4>
+    <blockquote>Sive is dedicated to producing quality work and she is great to work with.She is a great listener and a good public speaker.</blockquote>
+  </figcaption>
+</figure>
+</div>
   </section>
 </template>
 
@@ -128,226 +67,88 @@ export default {};
 </script>
 
 <style scoped>
-@keyframes slide {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 1920px 0;
-  }
-}
-@-webkit-keyframes slide {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 1920px 0;
-  }
-}
-.service-block-one a {
-  text-decoration: none;
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  padding-left:28rem;
 }
 
-@keyframes slide {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 1920px 0;
-  }
-}
-@-webkit-keyframes slide {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 1920px 0;
-  }
-}
-.service-block-one .inner-box {
+figure.snip1390 {
+  font-family: 'Roboto', Arial, sans-serif;
   position: relative;
-  display: block;
   overflow: hidden;
-  text-align: center;
-  background: #193050;
-  padding: 20px;
-}
-.service-block-one .inner-box:before {
-  position: absolute;
-  content: "";
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
   width: 100%;
-  height: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  transition: all 500ms ease;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  background-color: #193050;
+  padding: 30px;
+  background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.service-block-one .inner-box:hover:before {
-  height: 100%;
-  top: 0;
+figure.snip1390 *,
+figure.snip1390 *:before,
+figure.snip1390 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
-.service-block-one .inner-box .icon-box {
+figure.snip1390 figcaption {
+  width: 100%;
+}
+figure.snip1390 h2,
+figure.snip1390 h4,
+figure.snip1390 blockquote {
+  margin: 0;
+}
+figure.snip1390 h2,
+figure.snip1390 h4 {
+  font-weight: 300;
+}
+figure.snip1390 h2 {
+  color: #ffffff;
+}
+figure.snip1390 h4 {
+  color: #a6a6a6;
+}
+figure.snip1390 blockquote {
+  font-size: 1em;
+  padding: 45px 20px 40px 50px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
+  text-align: left;
   position: relative;
-  display: inline-block;
-  font-size: 100px;
-  line-height: 100px;
-  margin-bottom: 8px;
-  z-index: 1;
-  /* transition:all 500ms ease */
 }
-.service-block-one .inner-box .icon-box:before {
+figure.snip1390 blockquote:before {
+  font-family: 'FontAwesome';
+  content: "\201C";
   position: absolute;
-  content: "";
-  width: 10px;
-  height: 72px;
+  font-size: 70px;
+  opacity: 0.25;
+  font-style: normal;
+  top: 0px;
+  left: 20px;
+}
+figure.snip1390 .profile {
+  width: 100px;
   border-radius: 50%;
-  left: -9px;
-  top: -13px;
-  z-index: -1;
-  /* transition:all 500ms ease */
-}
-.service-block-one .inner-box:hover .icon-box:before {
-  background: #00b8ca;
-}
-.service-block-one .inner-box:hover .icon-box {
-  transform: rotateY(360deg);
-  color: #fff;
-}
-.service-block-one .inner-box h3 {
-  position: relative;
-  display: block;
-  font-size: 22px;
-  line-height: 30px;
-  color: #fff;
-  font-weight: 800;
-  margin-bottom: 9px;
-}
-.service-block-one .inner-box h3 a {
   display: inline-block;
-  color: #fff;
-}
-.service-block-one .inner-box p {
-  position: relative;
-  color: #fff;
-  margin-bottom: 33px;
-}
-.service-block-one .inner-box .theme-btn {
-  padding: 12px 25px;
-}
-.service-block-one .inner-box:hover .theme-btn {
-  background: #00b8ca;
-}
-.service-section .sec-title {
-  margin-bottom: 70px;
-}
-.service-section .sec-title span {
-  margin-bottom: 21px;
-}
-.service-block-one .inner-box .icon-box {
-  color: #00b8ca;
-}
-.service-block-one .inner-box:before {
-  background: #00b8ca;
-}
-.theme-btn {
-  position: relative;
-  display: inline-block;
-  font-size: 15px;
-  background: #00b8ca;
-  line-height: 26px;
-  font-weight: 700;
-  font-family: "Rubik", sans-serif;
-  color: #fff !important;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 5px;
-  z-index: 1;
-  transition: all 500ms ease;
-}
-.theme-btn:before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.theme-btn:hover:before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-}
-.theme-btn i {
-  position: relative;
-  top: 2px;
-  font-size: 20px;
-  margin-left: 40px;
-}
-@media (max-width: 1024px) {
-  .service-block-one .inner-box {
-    padding: 30px;
-  }
-  .service-block-one {
-    margin-bottom: 15px;
-  }
-  .theme-btn {
-    padding: 10px 20px;
-  }
-}
-.test {
-  width: 100%;
-  /* border-radius: 100%; */
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+  border: solid 5px #00b8ca;
 }
 
-.testimonial-text {
-  opacity: 0;
-  transition: all 0.3s linear;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
-.inner-box:hover .testimonial-text {
-  opacity: 1;
-}
-#about h2 {
-  text-align: center;
-  font-size: 40px;
-  padding-top: 100px;
-  text-transform: uppercase;
-  z-index: 2;
-}
-
-.testimonials-watermark {
-  position: relative;
-}
-
-.testimonials-watermark::before {
-  position: absolute;
-  top: -29%;
-  left: 50%;
-  height: 100%;
-  /* width: 100%; */
-  color: lightgray;
-  opacity: 0.5;
-  content: "TESTIMONIALS";
-  z-index: -1;
-  transform: translate(-50%, 25%) scale(2);
-}
 </style>
+
+
+

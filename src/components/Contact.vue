@@ -1,6 +1,6 @@
 <template>
   <section id="contact" class="contact-page-section">
-     <h2 class="about-watermark color">Contact me</h2>
+     
     <div class="container">
      
       <div class="inner-container">
