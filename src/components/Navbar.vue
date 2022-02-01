@@ -1,5 +1,6 @@
 <template>
-   <nav class="navbar navbar navbar-expand-lg">
+   <nav class="navbar navbar-expand-lg">
+       <div class="container-fluid">
         <div class="max-width">
             <div class="logo"><a href="#">Sive<span>CN.</span></a></div>
             <ul class="menu">
@@ -12,6 +13,7 @@
                 <li><a href="#Contact" class="menu-btn">Contact</a></li>
             </ul>
             
+        </div>
         </div>
     </nav>
 </template>

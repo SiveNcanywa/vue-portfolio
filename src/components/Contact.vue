@@ -95,6 +95,11 @@
       </div>
     </div>
   </section>
+   <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Copyright &copy; Sive Ncanywa</small>
+    </div>
+  </footer>
 </template>
 
 <script>
@@ -102,6 +107,7 @@ export default {};
 </script>
 
 <style>
+
 li,
 ul {
   list-style: none;
