@@ -248,6 +248,5 @@ export default {
   flex-direction: wrap;
   align-items: center;
   justify-items: center;
-  
 }
 </style>
