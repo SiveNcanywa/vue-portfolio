@@ -73,4 +73,18 @@ export default {};
   color: #193050;
   background: none;
 }
+@media (max-width: 947px){
+  .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+}
 </style>
+ 

@@ -1,5 +1,5 @@
 <template>
-  <section id="Testimonials">
+  <section id="Projects">
   <div class="container">
     <div class="row">
       <!--  Single Starts  -->
@@ -9,7 +9,7 @@
             <img class="test" src="../assets/images/me.jpg" alt="person" />
 
             <div class="testimonial-text">
-              <h3><a href="#">Test Service</a></h3>
+              <h3><a href="#">Javascript Calculator</a></h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -28,7 +28,7 @@
             <img class="test" src="../assets/images/me.jpg" alt="person" />
 
             <div class="testimonial-text">
-              <h3><a href="#">Test Service</a></h3>
+              <h3><a href="#">Pokemon fecth</a></h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -46,7 +46,7 @@
             <img class="test" src="../assets/me.jpg" alt="person" />
 
             <div class="testimonial-text">
-              <h3><a href="#">Test Service</a></h3>
+              <h3><a href="#">Fake Store Api</a></h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -64,7 +64,7 @@
             <img class="test" src="../assets/me.jpg" alt="person" />
 
             <div class="testimonial-text">
-              <h3><a href="#">Test Service</a></h3>
+              <h3><a href="#">E-commerce Website</a></h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -82,7 +82,7 @@
             <img class="test" src="../assets/me.jpg" alt="person" />
 
             <div class="testimonial-text">
-              <h3><a href="#">Test Service</a></h3>
+              <h3><a href="#">Kanye West quotes fetch</a></h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -100,7 +100,7 @@
             <img class="test" src="../assets/me.jpg" alt="person" />
 
             <div class="testimonial-text">
-              <h3><a href="#">Test Service</a></h3>
+              <h3><a href="#">Online Store POS</a></h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -118,7 +118,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  
+};
 </script>
 
 <style>

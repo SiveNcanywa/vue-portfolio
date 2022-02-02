@@ -127,4 +127,19 @@ ul li {
 .fa-linkedin:focus {
   color: blue;
 }
+@media (max-width: 947px){
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+}
 </style>
