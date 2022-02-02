@@ -1,125 +1,46 @@
 <template>
   <section id="Projects">
-  <div class="container">
-    <div class="row">
-      <!--  Single Starts  -->
-      <div class="col-md-4 service-block">
-        <div class="service-block-one">
-          <div class="inner-box">
-            <img class="test" src="../assets/images/me.jpg" alt="person" />
+    <div class="container">
+      <div class="row">
+        <!--  Single Starts  -->
+        <div class="col-md-4 service-block">
+          <div class="service-block-one">
+            <div
+              v-for="project in projects"
+              :key="project.id"
+              class="inner-box"
+            >
+              <img class="test" :src="project.image" alt="person" />
 
-            <div class="testimonial-text">
-              <h3><a href="#">Javascript Calculator</a></h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-              </p>
-              <a href=""><i class="fas fa-eye"></i></a><br />
-              <a href=""><i class="fab fa-github"></i></a>
+              <div class="testimonial-text">
+                <h3>{{ project.title }}</h3>
+
+                <a href=" {{project.netlify }}"><i class="fas fa-eye"></i></a
+                ><br />
+                <a href=" {{ project.repo}}"><i class="fab fa-github"></i></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!--  Single Ends  -->
-      <div class="col-md-4 service-block">
-        <div class="service-block-one">
-          <div class="inner-box">
-            <img class="test" src="../assets/images/me.jpg" alt="person" />
-
-            <div class="testimonial-text">
-              <h3><a href="#">Pokemon fecth</a></h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-              </p>
-              <a href=""><i class="fas fa-eye"></i></a><br />
-              <a href=""><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 service-block">
-        <div class="service-block-one">
-          <div class="inner-box">
-            <img class="test" src="../assets/me.jpg" alt="person" />
-
-            <div class="testimonial-text">
-              <h3><a href="#">Fake Store Api</a></h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-              </p>
-              <a href=""><i class="fas fa-eye"></i></a><br />
-              <a href=""><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 service-block">
-        <div class="service-block-one">
-          <div class="inner-box">
-            <img class="test" src="../assets/me.jpg" alt="person" />
-
-            <div class="testimonial-text">
-              <h3><a href="#">E-commerce Website</a></h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-              </p>
-              <a href=""><i class="fas fa-eye"></i></a><br />
-              <a href=""><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 service-block">
-        <div class="service-block-one">
-          <div class="inner-box">
-            <img class="test" src="../assets/me.jpg" alt="person" />
-
-            <div class="testimonial-text">
-              <h3><a href="#">Kanye West quotes fetch</a></h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-              </p>
-              <a href=""><i class="fas fa-eye"></i></a><br />
-              <a href=""><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 service-block">
-        <div class="service-block-one">
-          <div class="inner-box">
-            <img class="test" src="../assets/me.jpg" alt="person" />
-
-            <div class="testimonial-text">
-              <h3><a href="#">Online Store POS</a></h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-              </p>
-              <a href=""><i class="fas fa-eye"></i></a><br />
-              <a href=""><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
+        <!--  Single Ends  -->
       </div>
     </div>
-  </div>
   </section>
 </template>
 
 <script>
 export default {
-  
+  data() {
+    return {
+      projects: [],
+    };
+  },
+  mounted() {
+    fetch("http://localhost:3000/projects")
+      .then((res) => res.json())
+      .then((data) => (this.projects = data))
+      .catch((err) => console.log(err.message));
+  },
 };
 </script>
 
@@ -322,5 +243,11 @@ export default {
 .inner-box:hover .testimonial-text {
   opacity: 1;
 }
-
+.row {
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+  justify-items: center;
+  
+}
 </style>
