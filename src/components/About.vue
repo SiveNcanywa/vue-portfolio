@@ -4,7 +4,7 @@
   <section class="about" id="about">
     <div class="container">
       <div class="max-width">
-        <h2 class="title">About me</h2>
+        
         <div class="about-content">
           <div class="row">
             <div class="column left">
@@ -31,6 +31,9 @@ export default {};
 </script>
 
 <style scoped>
+#about{
+  background-color:  #20445B;
+}
 
 .about .about-content .left {
   width: 45%;
@@ -51,9 +54,7 @@ export default {};
   font-weight: 600;
   margin-bottom: 10px;
 }
-.about .about-content .right .text span {
-  color: crimson;
-}
+
 .about .about-content .right p {
   text-align: justify;
 }
@@ -71,7 +72,7 @@ export default {};
 }
 .about .about-content .right a:hover {
   color: #193050;
-  background: none;
+  background:  #20445B;
 }
 @media (max-width: 947px){
   .about .about-content .column{

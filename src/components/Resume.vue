@@ -1,6 +1,6 @@
 <template>
   <section id="Resume">
-    <h1 class="heading">Contact Me!</h1>
+    
     <div class="time">
       <div class="timeline">
         <ul>
@@ -161,20 +161,5 @@ export default {};
   z-index: 2;
 }
 
-.resume-watermark {
-  position: relative;
-}
 
-.resume-watermark::before {
-  position: absolute;
-  top: -29%;
-  left: 50%;
-  height: 100%;
-  /* width: 100%; */
-  color: lightgray;
-  opacity: 0.5;
-  content: "RESUME";
-  z-index: -1;
-  transform: translate(-50%, 25%) scale(2);
-}
 </style>

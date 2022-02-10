@@ -67,9 +67,13 @@ export default {};
 </script>
 
 <style scoped>
+#testimonials{
+    background-color:  #20445B;
+}
 .cards{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-items: center;
   align-items: center;
   padding-left:28rem;

@@ -16,7 +16,7 @@
       <li><a href="#Contact" class="menu-btn">Contact</a></li>
     </ul>
   </nav>
-  <div class="mobile-nav">
+  <!-- <div class="mobile-nav">
     <nav class="m-nav">
       <a href="#landing-page" class="mobile">HOME</a>
       <a href="#about-page" class="mobile">ABOUT</a>
@@ -24,7 +24,7 @@
       <a href="#testimonials-page" class="mobile">TESTIMONIALS</a>
       <a href="#contact-page" class="mobile">CONTACT</a>
     </nav>
-  </div>
+  </div> -->
 </template>
 
 <script>
@@ -81,7 +81,7 @@ export default {};
   font-weight: 600;
 }
 /* Offcanvas Navbar */
-.menu {
+/* .menu {
   display: block;
 
   width: 40px;
@@ -200,8 +200,8 @@ nav a:hover {
   right: 0;
   height: 100%;
   transition: 0.4s ease-in-out;
-}
-@media only screen and (max-width: 770px) {
+} */
+/* @media only screen and (max-width: 770px) {
   .nav {
     display: none;
   }
@@ -239,5 +239,5 @@ nav a:hover {
   .mobile-nav {
     display: none;
   }
-}
+} */
 </style>

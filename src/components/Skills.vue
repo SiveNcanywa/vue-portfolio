@@ -18,6 +18,9 @@ export default {};
 </script>
 
 <style scoped>
+#skills{
+    background-color:  #20445B;
+}
 .myskill {
   display: flex;
   flex-direction: row;

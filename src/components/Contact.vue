@@ -1,8 +1,6 @@
 <template>
   <section id="contact" class="contact-page-section">
-     
     <div class="container">
-     
       <div class="inner-container">
         <div class="row clearfix">
           <!--Form Column-->
@@ -10,13 +8,13 @@
             <div class="inner-column">
               <!--Contact Form-->
               <div class="contact-form">
-                <form method="post" action="https://formspree.io/f/myyoeyjn" id="contact-form">
+                <form @submit.prevent="handleSubmit" id="contact-form">
                   <div class="row clearfix">
                     <div class="form-group col-md-6 col-sm-6 co-xs-12">
                       <input
                         type="text"
                         name="name"
-                        value=""
+                        v-model="name"
                         placeholder="Name"
                         required
                       />
@@ -25,7 +23,7 @@
                       <input
                         type="email"
                         name="email"
-                        value=""
+                        v-model="email"
                         placeholder="Email"
                         required
                       />
@@ -34,7 +32,7 @@
                       <input
                         type="text"
                         name="subject"
-                        value=""
+                        v-model="subject"
                         placeholder="Subject"
                         required
                       />
@@ -43,16 +41,21 @@
                       <input
                         type="text"
                         name="phone"
-                        value=""
+                        v-model="phone"
                         placeholder="Phone"
                         required
                       />
                     </div>
                     <div class="form-group col-md-12 col-sm-12 co-xs-12">
-                      <textarea name="message" placeholder="Message"></textarea>
+                      <textarea
+                        name="message"
+                        v-model="message"
+                        placeholder="Message"
+                      ></textarea>
                     </div>
                     <div class="form-group col-md-12 col-sm-12 co-xs-12">
-                      <button type="submit" class="theme-btn btn-style-one"><i class="fas fa-paper-plane"></i>
+                      <button type="submit" class="theme-btn btn-style-one">
+                        <i class="fas fa-paper-plane"></i>
                         Send Now
                       </button>
                     </div>
@@ -68,25 +71,33 @@
             <div class="inner-column">
               <h2>Contact Info</h2>
               <ul class="list-info">
-                <li>
-                 <i class="far fa-envelope"></i>sive.ncanywa@gmail.com
-                </li>
+                <li><i class="far fa-envelope"></i>sive.ncanywa@gmail.com</li>
                 <li><i class="fab fa-codepen"></i>SiveNcanywa</li>
                 <li>
                   <i class="fas fa-phone"></i>
-                 083-256-6673
+                  083-256-6673
                 </li>
               </ul>
               <ul class="social-icon-four">
                 <li class="follow">Follow me on:</li>
                 <li>
-                  <a href="https://github.com/SiveNcanywa" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://github.com/SiveNcanywa" target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/sive-christina-0b2930223/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a
+                    href="https://www.linkedin.com/in/sive-christina-0b2930223/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
                 </li>
                 <li>
-                  <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=sive.ncanywa@gmail.com" target="_blank"><i class="fab fa-google"></i></a>
+                  <a
+                    href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=sive.ncanywa@gmail.com"
+                    target="_blank"
+                    ><i class="fab fa-google"></i
+                  ></a>
                 </li>
               </ul>
             </div>
@@ -95,15 +106,52 @@
       </div>
     </div>
   </section>
-  
 </template>
 
 <script>
-export default {};
+import { handleError } from "@vue/runtime-core";
+export default {
+  data() {
+    return {
+      name: "",
+      phone: "",
+      email: "",
+      subject: "",
+      message: "",
+    };
+  },
+
+  methods: {
+    handleSubmit() {
+      console.log(
+        this.name,
+        this.subject,
+        this.phone,
+        this.message,
+        this.email
+      );
+      fetch("http://localhost:5000/contacts", {
+        method: "POST",
+        body: JSON.stringify({
+          name: this.name,
+          phone: this.phone,
+          email: this.email,
+          subject: this.subject,
+          message: this.message,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
+        .then((response) => response.json())
+        .then((json) => alert(json.msg))
+        .catch((error) => alert(error.msg));
+    },
+  },
+};
 </script>
 
 <style>
-
 li,
 ul {
   list-style: none;
@@ -263,29 +311,5 @@ ul {
 }
 .social-icon-four li a:hover {
   color: #222;
-}
-#about h2 {
-  text-align: center;
-  font-size: 40px;
-  padding-top: 100px;
-  text-transform: uppercase;
-  z-index: 2;
-}
-
-.about-watermark {
-  position: relative;
-}
-
-.about-watermark::before {
-  position: absolute;
-  top: -29%;
-  left: 50%;
-  height: 100%;
-  /* width: 100%; */
-  color: lightgray;
-  opacity: 0.5;
-  content: "CONTACT ME";
-  z-index: -1;
-  transform: translate(-50%, 25%) scale(2);
 }
 </style>
