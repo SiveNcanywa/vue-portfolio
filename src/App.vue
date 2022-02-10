@@ -17,6 +17,8 @@ export default {
 </script>
 
 <style>
+
+
 #app {
   overflow-x: hidden;
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -24,6 +26,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  overflow-y: hidden;
 }
 </style>
 // 20445B 2nd bck

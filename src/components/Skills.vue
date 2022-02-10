@@ -1,5 +1,6 @@
 <template>
   <section id="skills">
+    <span class="head">---<h1 class="heading">My Skills</h1>---</span>
     <div class="myskill">
   <div class="flexcontainer">
     <div class="colouredShape"><i class="fab fa-bootstrap"></i></div>
@@ -20,6 +21,18 @@ export default {};
 <style scoped>
 #skills{
     background-color:  #20445B;
+     width: 100%;
+   height: 100%;
+   box-sizing: border-box;
+}
+.heading{
+  font-size: 3rem;
+  color:white;
+   font-family: Ubuntu,sans-serif;
+}
+.head{
+  color: #00b8ca;
+  width: 2rem;
 }
 .myskill {
   display: flex;

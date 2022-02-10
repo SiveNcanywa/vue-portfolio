@@ -1,6 +1,6 @@
 <template>
   <section id="Resume">
-    
+    <span class="head">---<h1 class="heading">My Skills</h1>---</span>
     <div class="time">
       <div class="timeline">
         <ul>
@@ -52,9 +52,23 @@ export default {};
 </script>
 
 <style scoped>
-
+#Resume{
+   width: 100%;
+   height: 100%;
+   box-sizing: border-box;
+}
+.heading{
+  font-size: 3rem;
+  color:white;
+   font-family: Ubuntu,sans-serif;
+}
+.head{
+  color: #00b8ca;
+  width: 2rem;
+}
 .time {
-  min-height: 100vh;
+  height: 100%;
+  /* min-height: 100vh; */
   width: 100%;
   display: flex;
   align-items: center;

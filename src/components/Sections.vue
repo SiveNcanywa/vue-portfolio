@@ -31,7 +31,5 @@ export default {
 </script>
 
 <style>
-section {
-  height: 100vh;
-}
+
 </style>

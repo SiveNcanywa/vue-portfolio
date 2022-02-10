@@ -2,6 +2,7 @@
   <!-- about section start -->
   <!-- about section start -->
   <section class="about" id="about">
+    <span class="head">---<h1 class="heading"> About Me </h1>---</span>
     <div class="container">
       <div class="max-width">
         
@@ -33,6 +34,18 @@ export default {};
 <style scoped>
 #about{
   background-color:  #20445B;
+   width: 100%;
+   height: 100%;
+   box-sizing: border-box;
+}
+.heading{
+  font-size: 3rem;
+  color:white;
+   font-family: Ubuntu,sans-serif;
+}
+.head{
+  color: #00b8ca;
+  width: 2rem;
 }
 
 .about .about-content .left {
@@ -47,6 +60,7 @@ export default {};
 .about .about-content .right {
   width: 55%;
   padding-top: 210px;
+  color: white;
   
 }
 .about .about-content .right .text {

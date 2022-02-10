@@ -1,9 +1,9 @@
 <template>
   <section id="Projects">
-     
-      <div class="container mx-auto mt-4">
+     <span class="head">---<h1 class="heading">My work</h1>---</span>
+      <div class="container">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col">
       <div v-for="project in projects" :key="project.id" class="card" style="width: 18rem;" >
   <img :src="project.image" class="card-img-top" alt="person">
   <div class="card-body">
@@ -45,6 +45,27 @@ export default {
 <style>
 #Projects{
    background-color: #193050;
+   position: relative;
+   width: 100%;
+   height: 100%;
+   box-sizing: border-box;
+}
+.heading{
+  font-size: 3rem;
+  color:white;
+   font-family: Ubuntu,sans-serif;
+}
+.head{
+  color: #00b8ca;
+  width: 2rem;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  padding-left:28rem;;
 }
 .card {
   background: #20445B;
