@@ -1,34 +1,65 @@
 <template>
   <section id="contact" class="contact-page-section">
-    <span class="head">---<h1 class="heading"> Contact Me </h1>---</span>
-   
-<div class="video">
-            <img src="https://i.ytimg.com/vi/cr3Bf53Lseo/maxresdefault.jpg" alt="logo"/>
-            <div class="overlay">
-                <div class="container">
-                    <h2>contact me</h2>
-                    <p class="h2-bottom">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting.</p>
-                    <div class="social">
-                        <i class="fa fa-facebook"></i>
-                        <i class="fa fa-twitter"></i>
-                        <i class="fa fa-instagram"></i>
-                        <i class="fa fa-linkedin"></i>
-                        <i class="fa fa-pinterest"></i>
-                    </div>
-                    <form>
-                        <input type="text" name="name" placeholder=" your name">
-                        <input type="email" name="email" placeholder="your email">
-                        <input type="tel" name="phone" placeholder="your phone">
-                        <input type="url" name="website" placeholder="your website">
-                        <input type="text" name="subject" placeholder="subject">
-                        <textarea placeholder="your message"></textarea>
-                        <button><div>send
-                            <i class="fa fa-arrow-right"></i></div>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
+
+<div class="container">
+	<div class="wrapper">
+
+		<!-- COMPANY INFORMATION -->
+		<div class="company-info">
+			<h3>Contact Details</h3>
+
+			<ul>
+				<li><i class="fa fa-road"></i> Cape Town</li>
+				<li><i class="fa fa-phone"></i>+27 832 566 6673</li>
+				<li><i class="fa fa-envelope"></i>sive.ncanywa@gmail.com</li>
+			</ul>
+		</div>
+		<!-- End .company-info -->
+
+		<!-- CONTACT FORM -->
+		<div class="contact">
+	
+
+			<form id="contact-form">
+
+				<p>
+					<label> First Name</label>
+					<input type="text" name="name" id="name" required>
+				</p>
+
+				<p>
+					<label>Last Name</label>
+					<input type="text" name=" surname" id="surname">
+				</p>
+
+				<p>
+					<label>E-mail Address</label>
+					<input type="email" name="email" id="email" required>
+				</p>
+
+				<p>
+					<label>Phone Number</label>
+					<input type="text" name="phone" id="phone">
+				</p>
+
+				<p class="full">
+					<label>Message</label>
+					<textarea name="message" rows="5" id="message"></textarea>
+				</p>
+
+				<p class="full">
+					<button type="submit">Submit</button>
+				</p>
+
+			</form>
+			<!-- End #contact-form -->
+		</div>
+		<!-- End .contact -->
+
+	</div>
+	<!-- End .wrapper -->
+</div>
+<!-- End .container -->
   </section>
 </template>
 
@@ -40,7 +71,7 @@ export default {
       name: "",
       phone: "",
       email: "",
-      subject: "",
+      surname: "",
       message: "",
     };
   },
@@ -49,7 +80,7 @@ export default {
     handleSubmit() {
       console.log(
         this.name,
-        this.subject,
+        this.surname,
         this.phone,
         this.message,
         this.email
@@ -60,7 +91,7 @@ export default {
           name: this.name,
           phone: this.phone,
           email: this.email,
-          subject: this.subject,
+          subject: this.surname,
           message: this.message,
         }),
         headers: {
@@ -77,20 +108,162 @@ export default {
 
 <style>
 #contact{
-  background-color: #193050;
+  background-color: #f8f8f8;
    width: 100%;
    height: 100%;
    box-sizing: border-box;
 }
-.heading{
-  font-size: 3rem;
-  color:white;
-   font-family: Ubuntu,sans-serif;
+
+* {
+  box-sizing: border-box;
 }
-.head{
-  color: #00b8ca;
-  width: 2rem;
+
+/* body {
+  background: #3952a3;
+  color: #485e74;
+  line-height: 1.6;
+  font-family: 'Yantramanav', sans-serif;
+  padding: 1em;
+} */
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.brand {
+  text-align: center;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.brand span {
+  color: #ffffff;
+}
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+
+/* ------------------- */
+/* COMPANY INFORMATION */
+/* ------------------- */
+
+.company-info {
+  background: #C3C9DD;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.company-info h3,
+.company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+/* ------- */
+/* CONTACT */
+/* ------- */
+
+.contact {
+  background: #dcdfea;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* ---- */
+/* FORM */
+/* ---- */
+
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact form label {
+  display: block;
+}
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form .full {
+  grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: solid 1px #627EDC;
+  border-radius: 4px;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form button {
+  background: #627EDC;
+  border: 0;
+  color: #e4e4e4;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background: #3952a3;
+  color: #ffffff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+@media only screen and (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .company-info {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .contact {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}
+
 
 
 </style>

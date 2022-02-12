@@ -1,124 +1,164 @@
 <template>
   <section id="testimonials">
- <div class="testimonial" v>
-    <div v-for="testimonial in testimonials" :key="testimonial.id" class="card">
-      <div class="layer"></div>
-      <div class="content">
-        <p>
-          {{testimonial.text}}
-        </p>
-        <!-- <div class="image">
-          <img :src="testimonial.image">
-        </div> -->
-        <!-- <div class="details">
-          <h2>{{testimonial.name}}<br><span>{{testimonial.relationship}}</span></h2>
-        </div> -->
+    <div class="container">
+      <div class="testimonial-view">
+        <div
+          class="carousel slide"
+          id="testimonialCarousel"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- testimonial 1 -->
+
+            <div
+              v-for="testimonial in testimonials"
+              :key="testimonial.id"
+              class="carousel-item active"
+            >
+              <div class="block">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="user">
+                      <div class="image">
+                        <img :src="testimonial.image" alt="person" />
+                      </div>
+                      <div class="info">
+                        <h2 class="user-name">{{ testimonial.name }}</h2>
+                        <h4>{{ testimonial.relationship }}</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="content">
+                      <p>{{ testimonial.text }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button> -->
+          <a
+            class="corousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a
+            class="corousel-control-next"
+            type="button"
+            href="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
   </section>
 </template>
 
 <script>
 export default {
-  data(){
-    return{
-      name:"",
-      id:"",
-      image:"",
-      text:"",
-      relationship:""
-    }
+  data() {
+    return {
+      testimonials: [],
+    };
   },
-   mounted() {
-    fetch("http://localhost:5000/testimonials")
+
+  mounted() {
+    fetch("https://sive-portfolio-backend.herokuapp.com/testimonials")
       .then((res) => res.json())
-      .then((data) => (this.testimonials = data))
+      .then((data) => {
+        this.testimonials = data;
+        console.log(testimonials);
+      })
       .catch((err) => console.log(err.message));
   },
 };
 </script>
-
-<style scoped>
-#testimonials{
-    background-color:  #20445B;
-     width: 100%;
-   height: 100%;
-   box-sizing: border-box;
+<style>
+#Testimonials {
+  background-color: #f8f8f8;
 }
-
-div.testimonial{
-  margin: 200px auto 100px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 20px;
+.testimonial-view {
+  max-width: 900px;
+  padding: 0 15px 50px;
+  margin: 0 auto 70px auto;
+  border-radius: 3px;
 }
-
-div.testimonial>div.card{
-  width: 350px;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
-  background-color: #193050;
+.block {
+  background: #fff;
+  color: #333;
+  padding: 60px 15px 15px;
+  margin: 50px 50px;
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.15);
+}
+.block.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: normal;
+}
+.user {
+  margin-bottom: 30px;
   text-align: center;
-  box-sizing: border-box;
-  box-shadow: 0 10px 20px rgba(0 , 0, 0, 0.5);
-
-  overflow: hidden;
 }
-
-div.testimonial>div.card>div.layer{
-  position: absolute;
-  top: calc(100% - 2px);
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, #00b8ca, #193050, #20445B);
-  z-index: 1;
-  transition: 0.5s;
-}
-
-div.testimonial>div.card:hover>div.layer{
-  top: 0;
-}
-
-div.testimonial>div.card>div.content{
+.image {
   position: relative;
-  z-index: 2;
+  margin: 0 15px 30px 15px;
 }
-
-div.testimonial>div.card>div.content>p{
+.image img {
+  height: 170px;
+  width: 170px;
+  border: 7px solid #193050;
+  border-radius: 170px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.user-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-bottom: 10px;
+  position: relative;
+}
+.user-name::after {
+  content: "";
+  height: 4px;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% -25px);
+  background: #193050;
+}
+.content {
+  text-align: center;
   font-size: 18px;
-  line-height: 24px;
-  color: #fff;
 }
-
-div.testimonial>div.card>div.content>div.image{
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid #fff;
-  box-shadow: 0 10px 20px rgba(0 , 0, 0, 0.2);
+.carousel-control-prev {
+  left: -50px;
 }
-
-div.testimonial>div.card>div.content>div.details>h2{
-  font-size: 18px;
-  color: #fff;
+.carousel-control-next {
+  right: -50px;
 }
-
-div.testimonial>div.card>div.content>div.details>h2>span{
-  font-size: 14px;
-  color: #00b8ca;
-  transition: 0.5s;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #193050;
 }
-
-div.testimonial>div.card:hover>div.content>div.details>h2>span{
-  color: #fff;
-}
-
 </style>
-
-
-

@@ -1,145 +1,83 @@
 <template>
   <section id="Home">
-    <div class="header">
-      <h1>Hello I am <span id="list"></span></h1>
-    </div>
-    <div>
-      <ul>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/sive-christina-0b2930223/"
-            target="_blank"
-          >
-            <i class="fab fa-linkedin" tabindex="0"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://codepen.io/sivencanywa" target="_blank">
-            <i class="fab fa-codepen" tabindex="0"></i>
-          </a>
-        </li>
+    <!-- <Navbar /> -->
+    <div class="stuff">
+      <div class="left">
+        
+        <h4>Aspiring Full Stack Developer</h4>
+       <h1 class="name">Sive Chrestena Ncanywa</h1>
+       <div class="buttons">
+       <button type="button"  href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=sive.ncanywa@gmail.com" class="hire">Hire me</button>
+<button type="button"  href="#About" class="more">More about me</button>
 
-        <li>
-          <a href="https://github.com/SiveNcanywa" target="_blank">
-            <i class="fab fa-github" tabindex="0"></i>
-          </a>
-        </li>
-      </ul>
+</div>
+
+      </div>
+      <div class="right">
+        <img src="https://i.postimg.cc/PqkzRwXW/lili-removebg-preview.png" alt="myself" />
+      </div>
     </div>
   </section>
 </template>
 
 <script>
-export default {};
+export default {
+  // components: { NAVBAR }
+};
 </script>
 
 <style scoped>
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 #Home {
   margin: 0;
-  padding: 0;
-  background-color: #193050;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(90deg, #f8f8f8 50%, #193050 50%);
   height: 100vh;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
 }
-
-div {
-  font-family: "Merriweather", serif;
-  font-size: 27px;
-  color: white;
-  /* min-width: 100%; */
-}
-
-.header {
-  padding: 47vh 0 5vh 0;
-  font-size: 75px;
-}
-
-p,
-a {
-  text-align: center;
-  /* margin-top: 5%; */
-  margin-bottom: 2rem;
-  color: #eee;
-}
-.header h1{
-  font-size: 75px;
-  font-family: Ubuntu,sans-serif;
-}
-
-ul {
+.right {
+  width: 50%;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
+  height: 100vh;
+  padding: 15rem;
+}
+.left {
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 15rem;
+}
+.stuff {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10%;
+  display: flex;
+}
+.buttons{
+  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  /* margin: 1rem; */
-  list-style-type: none;
-  font-size: 2rem;
-  /* padding: 35rem; */
+  padding: 10px;
+
+}
+.more{
+  background-color:#f8f8f8 ;
+  margin: 10px;
+  height: 4rem;
+  width: 10rem;
+}
+.hire{
+  margin: 10px;
+  background-color: #193050;
+  height: 4rem;
+  width: 10rem;
+}
+.name{
+  color: black;
+  font-size: 60px;
+  font-weight: 100;
+  display: flex;
 }
 
-ul li {
-  padding: 1rem;
-}
-
-.fab {
-  font-size: 5rem;
-}
-
-/* transition for social icon hover animation */
-
-.fa-codepen,
-.fa-linkedin,
-.fa-github {
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-/* social media icons hover color */
-
-.fa-github:hover,
-.fa-github:focus {
-  color: #000;
-  transform: scale(1.1);
-}
-
-.fa-github:hover,
-.fa-github:focus {
-  color: #000;
-  transform: scale(1.1);
-}
-
-.fa-codepen:hover,
-.fa-codepen:focus {
-  color: #000;
-  transform: scale(1.1);
-}
-
-.fa-linkedin:hover,
-.fa-linkedin:focus {
-  color: blue;
-}
-@media (max-width: 947px){
-    .home .home-content .text-2{
-        font-size: 70px;
-    }
-    .home .home-content .text-3{
-        font-size: 35px;
-    }
-    .home .home-content a{
-        font-size: 23px;
-        padding: 10px 30px;
-    }
-    .max-width{
-        max-width: 930px;
-    }
-}
 </style>
