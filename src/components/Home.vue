@@ -3,7 +3,7 @@
     <!-- <Navbar /> -->
      <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-    <i class="fa- fa-bars"></i>
+    <i class="fas fa-bars"></i>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
     <li><button class="dropdown-item"  href="#Home"     type="button">Home</button></li>
