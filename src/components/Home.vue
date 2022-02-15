@@ -1,6 +1,19 @@
 <template>
   <section id="Home">
     <!-- <Navbar /> -->
+     <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <li><button class="dropdown-item" type="button">Home</button></li>
+    <li><button class="dropdown-item" type="button">About</button></li>
+    <li><button class="dropdown-item" type="button">Skills</button></li>
+     <li><button class="dropdown-item" type="button">Projects</button></li>
+    <li><button class="dropdown-item" type="button">Testimonials</button></li>
+    <li><button class="dropdown-item" type="button">Contact</button></li>
+  </ul>
+</div>
     <div class="stuff">
       <div class="left">
         
@@ -76,8 +89,9 @@ export default {
 .name{
   color: black;
   font-size: 60px;
-  font-weight: 100;
+  font-weight: 400;
   display: flex;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 </style>

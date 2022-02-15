@@ -1,6 +1,6 @@
 <template>
   <section id="contact" class="contact-page-section">
-
+ <h2 class="title">Contact me</h2>
 <div class="container">
 	<div class="wrapper">
 
@@ -264,7 +264,35 @@ ul {
   }
 }
 
-
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #193050;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
 
 </style>
  

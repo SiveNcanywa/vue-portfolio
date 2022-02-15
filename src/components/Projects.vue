@@ -1,6 +1,7 @@
 <template>
   <section id="Projects">
     <div class="container">
+       <h2 class="title">My Work</h2>
       <div class="row">
         <div class="col">
           <div
@@ -126,5 +127,34 @@ export default {
   border: 5px solid #00b8ca;
   box-shadow: #193050 1px 0 10px;
   text-decoration: underline;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #193050;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
 }
 </style>

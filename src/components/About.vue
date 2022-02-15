@@ -7,6 +7,7 @@
    
     <div class="container">
       <div class="max-width">
+           <h2 class="title">About me</h2>
         
         <div class="about-content">
           <div class="row">
@@ -14,7 +15,7 @@
               <img src="https://i.postimg.cc/rFvcr8j0/sivenc.jpg" alt=" myself"/>
             </div>
             <div class="column right">
-
+              <h1 class="text-effect">Hello I am <span id="list"></span></h1>
             
               <p> I passed my matric in 2020 at Intshukumo Secondary School in Cape Town. In the same year I started dong Voluntary work in two Non-Profit-Organisations whereby I was working with people who are in need and less fortunate.
                 Following year in 2021 I did N1  in Electrical Enginnering in Northlink College and completed it. Same year in September I was fortunate to be one of the students at Life Choices Academy doing Coding and that is where I gained my coding skills.
@@ -52,7 +53,7 @@ export default {};
   height: 400px;
   width: 400px;
   object-fit: cover;
-  border: 10px #193050  ;
+  border: 10px solid #193050  ;
 }
 .about .about-content .right {
   width: 55%;
@@ -98,6 +99,45 @@ export default {};
     .about .about-content .right{
         flex: 100%;
     }
+}
+.text-effect{
+  color: black;
+  font-size: 30px;
+  font-family: sans-serif;
+ font-weight: 600;
+}
+#list{
+  color: #193050;
+}
+
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #193050;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
 }
 </style>
  

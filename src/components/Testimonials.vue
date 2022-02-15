@@ -1,6 +1,7 @@
 <template>
   <section id="testimonials">
     <div class="container">
+       <h2 class="title">Testimonials</h2>
       <div class="testimonial-view">
         <div
           class="carousel slide"
@@ -160,5 +161,34 @@ export default {
   width: 40px;
   height: 40px;
   background-color: #193050;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #193050;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
 }
 </style>

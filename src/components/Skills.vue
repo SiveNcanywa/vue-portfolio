@@ -1,6 +1,7 @@
 <template>
 
   <section id="skills">
+     <h2 class="title">My Skills</h2>
     <div class="myskill">
   <div class="flexcontainer">
     <div class="colouredShape"><i class="fab fa-bootstrap"></i></div>
@@ -68,6 +69,35 @@ footer {
   font-weight: bold;
   color: white;
   font-size: 3em;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #193050;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
 }
 
 </style>

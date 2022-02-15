@@ -3,11 +3,7 @@ import App from "./App.vue";
 
 createApp(App).mount("#app");
 
-const sentence = [
-  "Sive Chrestena Ncanywa",
-  "an aspiring fullstack developer ",
-  "a young hardworker",
-];
+const sentence = ["Sive ", "an aspiring fullstack developer "];
 
 function waitForMs(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -53,39 +49,3 @@ async function loopsentences() {
 }
 
 loopsentences();
-
-const buttonsWrapper = document.querySelector(".map");
-const slides = document.querySelector(".inner");
-
-buttonsWrapper.addEventListener("click", (e) => {
-  if (e.target.nodeName === "BUTTON") {
-    Array.from(buttonsWrapper.children).forEach((item) =>
-      item.classList.remove("active")
-    );
-    if (e.target.classList.contains("first")) {
-      slides.style.transform = "translateX(-0%)";
-      e.target.classList.add("active");
-    } else if (e.target.classList.contains("second")) {
-      slides.style.transform = "translateX(-33.33333333333333%)";
-      e.target.classList.add("active");
-    } else if (e.target.classList.contains("third")) {
-      slides.style.transform = "translatex(-66.6666666667%)";
-      e.target.classList.add("active");
-    }
-  }
-});
-
-const menu_btn = document.querySelector(".menu");
-const mobile_menu = document.querySelector(".mobile-nav");
-menu_btn.addEventListener("click", () => {
-  menu_btn.classList.toggle("is-active");
-  mobile_menu.classList.toggle("is-active");
-});
-
-const collapse = document.querySelectorAll(".mobile");
-collapse.forEach((element) => {
-  element.addEventListener("click", () => {
-    mobile_menu.classList.toggle("is-active");
-    menu_btn.classList.remove("is-active");
-  });
-});
