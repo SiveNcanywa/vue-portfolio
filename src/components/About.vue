@@ -2,7 +2,7 @@
   <!-- about section start -->
   <!-- about section start -->
    
-  <section class="about" id="about">
+  <section class="about" id="About">
 
    
     <div class="container">
@@ -37,7 +37,7 @@ export default {};
 </script>
 
 <style scoped>
-#about{
+#About{
   background-color:  #f8f8f8;
    width: 100%;
    height: 100%;
@@ -98,6 +98,7 @@ export default {};
     }
     .about .about-content .right{
         flex: 100%;
+        padding-top: 3px;
     }
 }
 .text-effect{

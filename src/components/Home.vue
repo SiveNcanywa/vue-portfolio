@@ -3,15 +3,15 @@
     <!-- <Navbar /> -->
      <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-    <i class="fa-solid fa-bars"></i>
+    <i class="fa- fa-bars"></i>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <li><button class="dropdown-item" type="button">Home</button></li>
-    <li><button class="dropdown-item" type="button">About</button></li>
-    <li><button class="dropdown-item" type="button">Skills</button></li>
-     <li><button class="dropdown-item" type="button">Projects</button></li>
-    <li><button class="dropdown-item" type="button">Testimonials</button></li>
-    <li><button class="dropdown-item" type="button">Contact</button></li>
+    <li><button class="dropdown-item"  href="#Home"     type="button">Home</button></li>
+    <li><button class="dropdown-item"  href="#About"     type="button">About</button></li>
+    <li><button class="dropdown-item"  href="#Skills"     type="button">Skills</button></li>
+     <li><button class="dropdown-item" href="#Projects"      type="button">Projects</button></li>
+    <li><button class="dropdown-item"  href="#Testimonials"     type="button">Testimonials</button></li>
+    <li><button class="dropdown-item"  href="#Contact"     type="button">Contact</button></li>
   </ul>
 </div>
     <div class="stuff">
@@ -94,4 +94,8 @@ export default {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.dropdown{
+  left: 700px;
+  top: 100px;
+}
 </style>

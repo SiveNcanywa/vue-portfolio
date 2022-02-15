@@ -1,17 +1,51 @@
 <template>
 
-  <section id="skills">
+  <section id="Skills">
      <h2 class="title">My Skills</h2>
-    <div class="myskill">
-  <div class="flexcontainer">
-    <div class="colouredShape"><i class="fab fa-bootstrap"></i></div>
-    <div class="colouredShape"><i class="fab fa-vuejs"></i></div>
-        <div class="colouredShape"><i class="fab fa-js-square"></i></div>
-        <div class="colouredShape"><i class="fab fa-html5"></i></div>
-        <div class="colouredShape"> <i class="fab fa-css3-alt"></i></div>
-        <div class="colouredShape"> <i class="fas fa-database"></i></div>
-  </div>
-  </div>
+ <div class="container">
+   <div class="container-box">
+     <div class="container-logo">
+      <i class="fas fa-globe"></i>
+     </div>
+     <div class="container-title">
+       <h3>Web Development</h3>
+       <div class="container-data">
+         <a href="#">HTML <i class="fab fa-html5"></i></a>
+         <a href="#">CSS <i class="fab fa-css3-alt"></i></a>
+         <a href="#">Javascript <i class="fab fa-js"></i></a>
+         <a href="#">Bootscrap<i class="fab fa-html5"></i></a>
+       </div>
+     </div>
+   </div>
+    
+   <div class="container-box">
+     <div class="container-logo">
+      <i class="fas fa-tools"></i>
+     </div>
+     <div class="container-title">
+       <h3>Framework</h3>
+       <div class="container-data">
+         <a href="#">Vue.Js<i class="fab fa-html5"></i></a>
+         <a href="#">Express<i class="fab fa-css3-alt"></i></a>
+         <a href="#">Node.Js<i class="fab fa-js"></i></a>
+         
+       </div>
+     </div>
+   </div>
+    <div class="container-box">
+     <div class="container-logo">
+      <i class="fas fa-database"></i>
+     </div>
+     <div class="container-title">
+       <h3>Database</h3>
+       <div class="container-data">
+         <a href="#">MYSQL<i class="fas fa-mysql"></i></a>
+        
+       </div>
+     </div>
+   </div>
+ </div>
+ 
   </section>
 </template>
 
@@ -20,55 +54,11 @@ export default {};
 </script>
 
 <style scoped>
-#skills{
+#Skills{
     background-color:  #f8f8f8;
      width: 100%;
    height: 100%;
    box-sizing: border-box;
-}
-
-.myskill {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  font-family: sans-serif;
-  color: dimgray;
-}
-
-footer {
-  font-size: 12px;
-  margin: auto;
-}
-
-.flexcontainer {
-  padding: 0px;
-  margin: 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-
-}
-
-.colouredShape{
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-top: 64px;
-  margin-right: 24px;
-  background-color: #193050;
-  border: solid 4px;
-  /* Shadow tutorial: http://www.corelangs.com/css/box/shadow.html */
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
-
-
-  text-align: center;
-  line-height: 200px;
-  font-weight: bold;
-  color: white;
-  font-size: 3em;
 }
 section .title{
     position: relative;
@@ -99,5 +89,66 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  margin-top: 20px;
+}
+.container-box {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  width: 400px;
+  height: 300px;
+  border-radius: 10%;
+  background-color: #193050;
+}
+.container-logo {
+  text-align: center;
+  margin: 20px 0;
+  transition: 0.3s;
+}
+.container-logo i {
+  color: white;
+  background-color: blue;
+  padding: 15px 18px;
+  font-size: 30px;
+  border-radius: 30%;
+  cursor: pointer;
+}
+.container-logo:hover {
+  transform: scale(1.2);
+}
+.container-title {
+  color: white;
+  text-align: center;
+}
+.container-title h3 {
+  margin-bottom: 20px;
+}
+.container-data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 20px;
+}
+.container a {
+  transition: 0.3s;
+  text-decoration: none;
+  color: white;
+  text-align: left;
+  padding: 10px 0;
+  font-size: 18px ;
+  float: right;
+}
+.container a:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 968px) {
+  .container-box {
+    margin: 20px 0;
+  }
+}
+
 
 </style>

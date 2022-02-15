@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="contact-page-section">
+  <section id="Contact" class="contact-page-section">
  <h2 class="title">Contact me</h2>
 <div class="container">
 	<div class="wrapper">
@@ -107,7 +107,7 @@ export default {
 </script>
 
 <style>
-#contact{
+#Contact{
   background-color: #f8f8f8;
    width: 100%;
    height: 100%;
