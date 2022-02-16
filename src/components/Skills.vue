@@ -25,9 +25,9 @@
      <div class="container-title">
        <h3>Framework</h3>
        <div class="container-data">
-         <a href="#">Vue.Js<i class="fab fa-html5"></i></a>
+         <a href="#">Vue.Js<i class="fab fa-vuejs"></i></a>
          <a href="#">Express<i class="fab fa-css3-alt"></i></a>
-         <a href="#">Node.Js<i class="fab fa-js"></i></a>
+         <a href="#">Node.Js<i class="fab fa-node"></i></a>
          
        </div>
      </div>
@@ -39,7 +39,7 @@
      <div class="container-title">
        <h3>Database</h3>
        <div class="container-data">
-         <a href="#">MYSQL<i class="fas fa-mysql"></i></a>
+         <a href="#">MYSQL<i class="fas fa-database"></i></a>
         
        </div>
      </div>
