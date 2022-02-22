@@ -6,12 +6,12 @@
     <i class="fas fa-bars"></i>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <li><button class="dropdown-item"  href="#Home"     type="button">Home</button></li>
-    <li><button class="dropdown-item"  href="#About"     type="button">About</button></li>
-    <li><button class="dropdown-item"  href="#Skills"     type="button">Skills</button></li>
-     <li><button class="dropdown-item" href="#Projects"      type="button">Projects</button></li>
-    <li><button class="dropdown-item"  href="#Testimonials"     type="button">Testimonials</button></li>
-    <li><button class="dropdown-item"  href="#Contact"     type="button">Contact</button></li>
+    <li><a class="dropdown-item"  href="#Home"    type="button">Home</a></li>
+    <li><a class="dropdown-item"  href="#About"    type="button">About</a></li>
+    <li><a class="dropdown-item"  href="#Skills"   type="button">Skills</a></li>
+     <li><a class="dropdown-item" href="#Projects" type="button">Projects</a></li>
+    <li><a class="dropdown-item"  href="#Testimonials" type="button">Testimonials</a></li>
+    <li><a class="dropdown-item"  href="#Contact"  type="button">Contact</a></li>
   </ul>
 </div>
     <div class="stuff">
@@ -20,8 +20,8 @@
         <h4>Aspiring Full Stack Developer</h4>
        <h1 class="name">Sive Chrestena Ncanywa</h1>
        <div class="buttons">
-       <button type="button"  href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=sive.ncanywa@gmail.com" class="hire">Hire me</button>
-<button type="button"  href="#About" class="more">More about me</button>
+       <a  class="hire" type="button"  href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=sive.ncanywa@gmail.com" >Hire me</a>
+<a    class="more"    type="button"  href="#About" >More about me</a>
 
 </div>
 

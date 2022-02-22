@@ -1,29 +1,16 @@
 <template>
   <section id="Projects">
-    <div class="container">
-       <h2 class="title">My Work</h2>
-      <div class="row">
-        <div class="col">
-          <div
-            v-for="project in projects"
-            :key="project.id"
-            class="card"
-            style="width: 18rem"
-          >
-            <img :src="project.image" class="card-img-top" alt="person" />
-            <div class="card-body">
-              <h5 class="card-title">{{ project.title }}</h5>
-              <a href="{{project.netlify}}" class="btn mr-2"
-                ><i class="fas fa-link"></i> Visit Site</a
-              >
-              <a href="{{project.repo}}" class="btn"
-                ><i class="fab fa-github"></i> Github</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+     <h2 class="title">My Skills</h2>
+   <div  v-for="project in projects"
+            :key="project.id" class="card" style="width: 18rem;">
+  <img :src="project.image" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{ project.title }}</h5>
+    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+    <a  href="{{project.netlify}}" class="btn btn-primary">Go somewhere</a>
+    <a  href="{{project.repo}}" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
   </section>
 </template>
 <script>
@@ -99,35 +86,6 @@ export default {
   height: 100%;
   box-sizing: border-box;
 }
-
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-items: center;
-  align-items: center;
-  padding-left: 28rem;
-}
-.card {
-  background: #20445b;
-  border: 1px solid #00b8ca;
-  color: rgba(250, 250, 250, 0.8);
-  margin-bottom: 2rem;
-}
-
-.btn {
-  border: 5px solid;
-  border-image-slice: 1;
-  text-decoration: none;
-  transition: all 0.4s ease;
-}
-
-.btn:hover,
-.btn:focus {
-  border: 5px solid #00b8ca;
-  box-shadow: #193050 1px 0 10px;
-  text-decoration: underline;
-}
 section .title{
     position: relative;
     text-align: center;
@@ -158,3 +116,27 @@ section .title::after{
     transform: translateX(-50%);
 }
 </style>
+  <div class="container">
+       <h2 class="title">My Work</h2>
+      <div class="row">
+        <div class="col">
+          <div
+            v-for="project in projects"
+            :key="project.id"
+            class="card"
+            style="width: 18rem"
+          >
+            <img :src="project.image" class="card-img-top" alt="person" />
+            <div class="card-body">
+              <h5 class="card-title">{{ project.title }}</h5>
+              <a href="{{project.netlify}}" class="btn mr-2"
+                ><i class="fas fa-link"></i> Visit Site</a
+              >
+              <a href="{{project.repo}}" class="btn"
+                ><i class="fab fa-github"></i> Github</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
