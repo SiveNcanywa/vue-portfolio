@@ -1,65 +1,24 @@
 <template>
   <section id="Contact" class="contact-page-section">
  <h2 class="title">Contact me</h2>
-<div class="container">
-	<div class="wrapper">
+ <form class="contact-form row">
+      <div class="form-field col x-50">
+         <input id="name" class="input-text js-input" type="text" required>
+         <label class="label" for="name">Name</label>
+      </div>
+      <div class="form-field col x-50">
+         <input id="email" class="input-text js-input" type="email" required>
+         <label class="label" for="email">E-mail</label>
+      </div>
+      <div class="form-field col x-100">
+         <input id="message" class="input-text js-input" type="text" required>
+         <label class="label" for="message">Message</label>
+      </div>
+      <div class="form-field col x-100 align-center">
+         <input class="submit-btn" type="submit" value="Submit">
+      </div>
+   </form>
 
-		<!-- COMPANY INFORMATION -->
-		<div class="company-info">
-			<h3>Contact Details</h3>
-
-			<ul>
-				<li><i class="fa fa-road"></i> Cape Town</li>
-				<li><i class="fa fa-phone"></i>+27 832 566 6673</li>
-				<li><i class="fa fa-envelope"></i>sive.ncanywa@gmail.com</li>
-			</ul>
-		</div>
-		<!-- End .company-info -->
-
-		<!-- CONTACT FORM -->
-		<div class="contact">
-	
-
-			<form id="contact-form">
-
-				<p>
-					<label> First Name</label>
-					<input type="text" name="name" id="name" required>
-				</p>
-
-				<p>
-					<label>Last Name</label>
-					<input type="text" name=" surname" id="surname">
-				</p>
-
-				<p>
-					<label>E-mail Address</label>
-					<input type="email" name="email" id="email" required>
-				</p>
-
-				<p>
-					<label>Phone Number</label>
-					<input type="text" name="phone" id="phone">
-				</p>
-
-				<p class="full">
-					<label>Message</label>
-					<textarea name="message" rows="5" id="message"></textarea>
-				</p>
-
-				<p class="full">
-					<button type="submit">Submit</button>
-				</p>
-
-			</form>
-			<!-- End #contact-form -->
-		</div>
-		<!-- End .contact -->
-
-	</div>
-	<!-- End .wrapper -->
-</div>
-<!-- End .container -->
   </section>
 </template>
 
@@ -110,7 +69,7 @@ export default {
 #Contact{
   background-color: #f8f8f8;
    width: 100%;
-   height: 100%;
+   height: 100vh;
    box-sizing: border-box;
 }
 
@@ -118,152 +77,112 @@ export default {
   box-sizing: border-box;
 }
 
-/* body {
-  background: #3952a3;
-  color: #485e74;
-  line-height: 1.6;
-  font-family: 'Yantramanav', sans-serif;
-  padding: 1em;
-} */
-
-.container {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1em;
+.row {
+  margin: -20px 0;
 }
-
-ul {
-  list-style: none;
-  padding: 0;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-
-.brand {
-  text-align: center;
-	font-weight: 300;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
+.row .col {
+  padding: 0 20px;
+  float: left;
+  box-sizing: border-box;
 }
-
-.brand span {
-  color: #ffffff;
+.row .col.x-50 {
+  width: 50%;
 }
-
-.wrapper {
-  box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
-}
-
-.wrapper > * {
-  padding: 1em;
-}
-
-/* ------------------- */
-/* COMPANY INFORMATION */
-/* ------------------- */
-
-.company-info {
-  background: #C3C9DD;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-
-.company-info h3,
-.company-info ul {
-  text-align: center;
-  margin: 0 0 1rem 0;
-}
-
-/* ------- */
-/* CONTACT */
-/* ------- */
-
-.contact {
-  background: #dcdfea;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
-/* ---- */
-/* FORM */
-/* ---- */
-
-.contact form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.contact form label {
-  display: block;
-}
-
-.contact form p {
-  margin: 0;
-}
-
-.contact form .full {
-  grid-column: 1 / 3;
-}
-
-.contact form button,
-.contact form input,
-.contact form textarea {
+.row .col.x-100 {
   width: 100%;
-  padding: 1em;
-  border: solid 1px #627EDC;
-  border-radius: 4px;
 }
 
-.contact form textarea {
-  resize: none;
+.content-wrapper {
+  min-height: 100%;
+  position: relative;
 }
 
-.contact form button {
-  background: #627EDC;
-  border: 0;
-  color: #e4e4e4;
+.get-in-touch {
+  max-width: 650px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.get-in-touch .title {
+  text-align: center;
+  font-family: Raleway, sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
-  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 36px;
+  line-height: 48px;
+  padding-bottom: 48px;
 }
 
-.contact form button:hover,
-.contact form button:focus {
-  background: #3952a3;
-  color: #ffffff;
-  outline: 0;
-  transition: background-color 2s ease-out;
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #000;
+  font-family: Lusitana, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.contact-form .input-text:focus {
+  outline: none;
+}
+.contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
+  transform: translateY(-24px);
+}
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-family: Lusitana, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #888;
+  cursor: text;
+  transition: transform 0.2s ease-in-out;
+}
+.contact-form .submit-btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
 }
 
-/* ------------- */
-/* MEDIA QUERIES */
-/* ------------- */
-
-@media only screen and (min-width: 700px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-
-  .wrapper > * {
-    padding: 2em;
-  }
-
-  .company-info {
-    border-radius: 4px 0 0 4px;
-  }
-
-  .contact {
-    border-radius: 0 4px 4px 0;
-  }
-
-  .company-info h3,
-  .company-info ul,
-  .brand {
-    text-align: left;
-  }
+.note {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: Lusitana, serif;
+  font-size: 16px;
+  line-height: 21px;
 }
-
+.note .link {
+  color: #888;
+  text-decoration: none;
+}
+.note .link:hover {
+  text-decoration: underline;
+}
 section .title{
     position: relative;
     text-align: center;

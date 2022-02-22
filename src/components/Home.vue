@@ -46,7 +46,7 @@ export default {
   height: 100vh;
 }
 .right {
-  width: 50%;
+  width: 40%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -54,7 +54,7 @@ export default {
   padding: 15rem;
 }
 .left {
-  width: 50%;
+  width:40%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
