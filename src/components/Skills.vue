@@ -93,7 +93,7 @@ section .title::after{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-flow: wrap;
+  gap:20px;
   margin-top: 20px;
 }
 .container-box {

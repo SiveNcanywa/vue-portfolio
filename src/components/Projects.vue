@@ -1,16 +1,29 @@
 <template>
   <section id="Projects">
-     <h2 class="title">My Skills</h2>
-   <div  v-for="project in projects"
-            :key="project.id" class="card" style="width: 18rem;">
-  <img :src="project.image" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{ project.title }}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a  href="{{project.netlify}}" class="btn btn-primary">Go somewhere</a>
-    <a  href="{{project.repo}}" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+    <h2 class="title">My Projects</h2>
+    <div class="cards">
+      <div
+        v-for="project in projects"
+        :key="project.id"
+        class="card"
+        style="width: 18rem"
+      >
+        <img :src="project.image" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ project.title }}</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="{{project.netlify}}" class="btn btn-primary"
+            ><i class="fas fa-eye"></i
+          ></a>
+          <a href="{{project.repo}}" class="btn btn-primary"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 <script>
@@ -79,6 +92,19 @@ export default {
 </script>
 
 <style>
+.cards {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  min-width: 25%;
+
+}
+
 #Projects {
   background-color: #f8f8f8;
   position: relative;
@@ -86,33 +112,33 @@ export default {
   height: 100%;
   box-sizing: border-box;
 }
-section .title{
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
 }
-section .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #193050;
-    transform: translateX(-50%);
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #193050;
+  transform: translateX(-50%);
 }
-section .title::after{
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    font-size: 20px;
-    color: crimson;
-    padding: 0 5px;
-    background: #fff;
-    transform: translateX(-50%);
+section .title::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
 }
 </style>
