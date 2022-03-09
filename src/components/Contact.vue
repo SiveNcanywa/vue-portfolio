@@ -1,24 +1,47 @@
 <template>
   <section id="Contact" class="contact-page-section">
  <h2 class="title">Contact me</h2>
- <form class="contact-form row">
-      <div class="form-field col x-50">
-         <input id="name" class="input-text js-input" type="text" required>
-         <label class="label" for="name">Name</label>
-      </div>
-      <div class="form-field col x-50">
-         <input id="email" class="input-text js-input" type="email" required>
-         <label class="label" for="email">E-mail</label>
-      </div>
-      <div class="form-field col x-100">
-         <input id="message" class="input-text js-input" type="text" required>
-         <label class="label" for="message">Message</label>
-      </div>
-      <div class="form-field col x-100 align-center">
-         <input class="submit-btn" type="submit" value="Submit">
-      </div>
-   </form>
+<div class="container">
+	<div class="wrapper">
 
+	<div id="container">
+  
+  <div class="icon_wrapper">
+  
+  </div>
+  <form action="#" method="post" id="contact_form">
+    <div class="name">
+      <label for="name"></label>
+      <input type="text" placeholder="My name is" name="name" id="name_input" required>
+    </div>
+    <div class="email">
+      <label for="email"></label>
+      <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+    </div>
+    <div class="telephone">
+      <label for="name"></label>
+      <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+    </div>
+    <div class="subject">
+      <label for="subject"></label>
+      <select placeholder="Subject line" name="subject" id="subject_input" required>
+        <option disabled hidden selected>Subject line</option>
+        <option>I'd like to buy a car</option>
+        <option>I'd like to ask a question</option>
+        <option>I'd like to make a proposal</option>
+      </select>
+    </div>
+    <div class="message">
+      <label for="message"></label>
+      <textarea name="message" placeholder="Message" id="message_input" cols="30" rows="5" required></textarea>
+    </div>
+    <div class="submit">
+      <input type="submit" value="Send Message" id="form_button" />
+    </div>
+  </form><!-- // End form -->
+</div><!-- // End #container -->
+  </div>
+</div>
   </section>
 </template>
 
@@ -69,119 +92,226 @@ export default {
 #Contact{
   background-color: #f8f8f8;
    width: 100%;
-   height: 100vh;
+   height: 100%;
    box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
+button {
+  overflow: visible;
 }
 
-.row {
-  margin: -20px 0;
+button, select {
+  text-transform: none;
 }
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+
+button, input, select, textarea {
+  color:#193050;
+  font: inherit;
+  margin: 0;
 }
-.row .col {
-  padding: 0 20px;
-  float: left;
-  box-sizing: border-box;
+
+input {
+  line-height: normal;
 }
-.row .col.x-50 {
-  width: 50%;
+
+textarea {
+  overflow: auto;
 }
-.row .col.x-100 {
+
+#container {
+  
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+ 
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+  width: 135%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h1 {
+  color:#193050;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  border-bottom: solid 2px #193050;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
   width: 100%;
 }
 
-.content-wrapper {
-  min-height: 100%;
-  position: relative;
-}
-
-.get-in-touch {
-  max-width: 650px;
-  margin: 0 auto;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.get-in-touch .title {
-  text-align: center;
-  font-family: Raleway, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 36px;
-  line-height: 48px;
-  padding-bottom: 48px;
-}
-
-.contact-form .form-field {
-  position: relative;
-  margin: 32px 0;
-}
-.contact-form .input-text {
+.icon {
   display: block;
-  width: 100%;
-  height: 36px;
-  border-width: 0 0 2px 0;
-  border-color: #000;
-  font-family: Lusitana, serif;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
-}
-.contact-form .input-text:focus {
-  outline: none;
-}
-.contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
-  transform: translateY(-24px);
-}
-.contact-form .label {
-  position: absolute;
-  left: 20px;
-  bottom: 11px;
-  font-family: Lusitana, serif;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #888;
-  cursor: text;
-  transition: transform 0.2s ease-in-out;
-}
-.contact-form .submit-btn {
-  display: inline-block;
-  background-color: #000;
-  color: #fff;
-  font-family: Raleway, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 16px;
-  line-height: 24px;
-  padding: 8px 16px;
-  border: none;
-  cursor: pointer;
+  fill: #474544;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
 }
 
-.note {
-  position: absolute;
-  left: 0;
-  bottom: 10px;
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #193050;
+	color: #193050;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
   width: 100%;
-  text-align: center;
-  font-family: Lusitana, serif;
-  font-size: 16px;
-  line-height: 21px;
+  
 }
-.note .link {
-  color: #888;
-  text-decoration: none;
+
+.telephone {
+  width: 100%;
 }
-.note .link:hover {
-  text-decoration: underline;
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #193050;
+}
+
+:-moz-placeholder { 
+	color: #193050;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #193050;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #193050;
+}
+
+#form_button {
+  background: #193050;
+  border: solid 2px #193050;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #474544;
+  color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+  
+  .underline {
+    width: 68px;
+  }
+  
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+  
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .underline {
+    width: 53px;
+  }
+  
+  input[type='text'], [type='email'], select, textarea {
+    font-size: 0.875em;
+  }
 }
 section .title{
     position: relative;

@@ -15,10 +15,10 @@
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <a href="{{project.netlify}}" class="btn btn-primary"
+          <a :href="project.netlify" class="btn btn-primary"
             ><i class="fas fa-eye"></i
           ></a>
-          <a href="{{project.repo}}" class="btn btn-primary"
+          <a :href="project.repo" class="btn btn-primary"
             ><i class="fab fa-github"></i
           ></a>
         </div>
